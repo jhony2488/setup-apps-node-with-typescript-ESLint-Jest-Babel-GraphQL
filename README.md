@@ -1,4 +1,4 @@
-# setup-apps-node-with-typescript-ESLint-Jest-Babel-
+# setup-apps-node-with-typescript-ESLint-Jest-Babel-GraphQL
 
 ### npm install
 
