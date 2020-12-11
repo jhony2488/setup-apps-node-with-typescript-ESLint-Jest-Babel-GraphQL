@@ -1,7 +1,10 @@
-import express from 'express'
+import { GraphQLServer } from 'graphql-yoga'
+import path from 'path'
+const resolvers = require('@config/resolvers')
 
-const app = express()
+const server = new GraphQLServer({
+  typeDefs: path.resolve(__dirname, 'schema.graphql'),
+  resolvers,
+})
 
-app.get('/', (req, res) => res.json({ message: 'Hello World' }))
-
-app.listen(8081)
+server.start()
